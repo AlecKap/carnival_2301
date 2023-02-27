@@ -35,8 +35,8 @@ RSpec.describe Visitor do
 
   describe 'can add preferences and check if tall enough' do
     it '#add preferences' do
-      @visitor1.add_preferences(:gentle)
-      @visitor1.add_preferences(:water)
+      @visitor1.add_preference(:gentle)
+      @visitor1.add_preference(:water)
 
       expect(@visitor1.preferences).to eq([:gentle, :water])
     end
